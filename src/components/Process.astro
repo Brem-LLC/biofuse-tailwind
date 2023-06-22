@@ -1,0 +1,75 @@
+---
+const process = [
+  {
+    icon: "https://images.squarespace-cdn.com/content/v1/59f146c4d0e628d1a192ceaa/1658251949547-59FEQWW32ZICAO1VK03F/image-asset.png?format=100w",
+    title: "Find Your Service",
+    text: "Whether you are visiting Biofuse for it’s capabilities with integrative wellness, vitamin infusions, regenerative therapies, or peptides; you’ll get service and knowledge you’ve always needed to start making the health changes you desire.",
+    linkto: "#",
+  },
+  {
+    icon: "https://images.squarespace-cdn.com/content/v1/59f146c4d0e628d1a192ceaa/1570737045775-2H8KF9G9FX7E66Y1MNF1/Select%2BYour%2BIV%2BTherapy%2BAppointment%2BDate?format=100w",
+    title: "Schedule Online",
+    text: "Please book your appointment online so we can maintain a comfortable atmosphere for all clients!",
+    linkto: "#",
+  },
+  {
+    icon: "https://images.squarespace-cdn.com/content/v1/59f146c4d0e628d1a192ceaa/1570737062283-AR3MSO6SD8FSAX75A3LK/Buy%2BYour%2BIV%2BTherapy%2BOrder?format=100w",
+    title: "Fill Out Waiver",
+    text: "Fill out our online waiver/health history questionnaire. If you schedule your appointment ahead of time you will receive a waiver via email. Please fill out waiver prior to appointment.",
+    linkto: "#",
+  },
+  {
+    icon: "https://images.squarespace-cdn.com/content/v1/59f146c4d0e628d1a192ceaa/1570737078794-NRC5SE0UTYAD57BXE9FL/Registered%2BNurse%2BArrives%2BTo%2BAdminister%2BIV%2BTherapy?format=100w",
+    title: "Nurse Arrives",
+    text: "For concierge service only: An additional $50/per person fee is assessed as one of our nurses will arrive on time, ready to get you RevIVed with a great attitude.",
+    linkto: "#",
+  },
+  {
+    icon: "https://images.squarespace-cdn.com/content/v1/59f146c4d0e628d1a192ceaa/1570737102700-QRRUL3923Z0KBIJWAPGE/Vitamin%2BIV%2BDrip%2BBegins?format=100w",
+    title: "Enjoy Our Service",
+    text: "After a nurse or physician has reviewed your health profile and waiver, we’ll begin working towards your health goals!",
+    linkto: "#",
+  },
+  {
+    icon: "https://images.squarespace-cdn.com/content/v1/59f146c4d0e628d1a192ceaa/1570737118081-4GG0U3PPU3NFM454WX60/recover+and+revived+with+iv+therapy?format=100w",
+    title: "Stay Healthy!",
+    text: "You are ready to take on the day! With you received a full dose of vitamins, antioxidants, & amino acids, a personalized health plan, or started your regenerative therapies, Biofuse will continue to assist and guide you in your personal health and wellness journey.",
+    linkto: "#",
+  },
+];
+---
+
+<!-- Features -->
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div class="h-[350px] w-full lg:aspect-[16/5] border-primary/20 bg-black overflow-hidden rounded-2xl shadow-xl md:-mt-[15%] relative z-10">
+    <img class="w-full h-full object-cover opacity-40" src="https://images.squarespace-cdn.com/content/v1/59f146c4d0e628d1a192ceaa/1632245649643-BRBVB6SSDWWST9TWJARJ/LIT03344+%281%29.jpg?format=1500w" alt="Image Description" />
+    <div class="text-center max-w-3xl w-full mx-auto px-7 mb-14 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <h2 class="font-bold text-4xl md:text-6xl text-white">Know the Process</h2>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="mt-5 lg:mt-16 gap-8">
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+      {
+        process.map((item, index) => (
+          <div class="flex items-start sm:gap-x-5">
+            <img src={item.icon} alt={item.title} class="object-contain object-top w-16 sm:w-auto" />
+            <div class="grow">
+              <h3 class="text-lg font-semibold text-gray-800">
+                <a href={item.linkto}>
+                  {index + 1}. {item.title}
+                </a>
+              </h3>
+              <p class="mt-1 text-gray-600 dark:text-gray-400">{item.text}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <a href="#" type="button" class="py-4 mt-16 px-12 w-fit mx-auto flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-primary text-white hover:bg-sky-600 transition-all">
+      See Our Drips
+    </a>
+  </div>
+</div>

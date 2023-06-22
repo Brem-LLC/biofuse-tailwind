@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "@components/Hero.astro";
+import Header from "@components/Header.astro";
+import Process from "@components/Process.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Questions from '@components/Questions.astro'
+import Footer from '@components/Footer.astro'
+---
+
+<Layout title="Homepage">
+  <Header />
+  <Hero />
+  <Process />
+  <Testimonials />
+  <!-- Banner -->
+  <div class="h-[80vh] bg-cover bg-fixed bg-center bg-no-repeat" style={`background-image: url(/src/assets/images/biofuse-banner-with-address.png)`}></div>
+
+  <Questions />
+  <Footer />
+</Layout>

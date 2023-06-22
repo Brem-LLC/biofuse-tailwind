@@ -1,0 +1,90 @@
+---
+import fatloss from "@images/fat-loss.png";
+
+const shopItems = [
+  {
+    thumb: fatloss,
+    name: "Fat Loss",
+    components: ["Tesamorelin", "CJC-1295/Ipamorelin", "BPC-157"],
+    benefits: "Combined together, these peptides support fat loss and body recomposition along with a sound nutrition and training program.",
+    price: 550,
+    linkto: "#",
+  },
+  {
+    thumb: fatloss,
+    name: "Fat Loss",
+    components: ["Tesamorelin", "CJC-1295/Ipamorelin", "BPC-157"],
+    benefits: "Combined together, these peptides support fat loss and body recomposition along with a sound nutrition and training program.",
+    price: 550,
+    linkto: "#",
+  },
+  {
+    thumb: fatloss,
+    name: "Fat Loss",
+    components: ["Tesamorelin", "CJC-1295/Ipamorelin", "BPC-157"],
+    benefits: "Combined together, these peptides support fat loss and body recomposition along with a sound nutrition and training program.",
+    price: 550,
+    linkto: "#",
+  },
+  {
+    thumb: fatloss,
+    name: "Fat Loss",
+    components: ["Tesamorelin", "CJC-1295/Ipamorelin", "BPC-157"],
+    benefits: "Combined together, these peptides support fat loss and body recomposition along with a sound nutrition and training program.",
+    price: 550,
+    linkto: "#",
+  },
+  {
+    thumb: fatloss,
+    name: "Fat Loss",
+    components: ["Tesamorelin", "CJC-1295/Ipamorelin", "BPC-157"],
+    benefits: "Combined together, these peptides support fat loss and body recomposition along with a sound nutrition and training program.",
+    price: 550,
+    linkto: "#",
+  },
+];
+---
+
+<section class="px-7 py-16 md:py-24">
+  <div class="max-w-7xl w-full mx-auto">
+    <div class="text-center mb-20">
+      <h3 class="text-2xl md:text-3xl text-primary mb-4">Purchase Take-Home Peptides Here</h3>
+      <p>Prices Reflect 1 Month Supply</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      {
+        shopItems.map((item) => (
+          <div>
+            <div class="relative">
+              <div class="relative h-72 w-full overflow-hidden rounded-lg">
+                <img src={item.thumb} alt={item.name} class="h-full w-full object-cover object-center" />
+              </div>
+              <div class="relative mt-4">
+                <h3 class="text-xl font-medium text-gray-900 mb-1">{item.name}</h3>
+                <p class="text-sm font-semibold">Components:</p>
+                <ul class="text-sm list-disc pl-5 mb-2">
+                  {item.components.map((component) => (
+                    <li>{component}</li>
+                  ))}
+                </ul>
+                <p class="text-sm font-semibold">Benefits:</p>
+                <p class="mt-1 text-sm text-gray-500">{item.benefits}</p>
+              </div>
+              <div class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
+                <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-primary opacity-50" />
+                <p class="relative text-lg font-semibold text-white">${item.price}</p>
+              </div>
+            </div>
+            <div class="mt-6">
+              <a href={item.linkto} class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200">
+                Purchase
+                <span class="sr-only" />
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

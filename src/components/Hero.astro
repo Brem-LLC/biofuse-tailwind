@@ -1,0 +1,31 @@
+---
+import herobackground from '@images/hero-background.jpeg'
+---
+
+<!-- Hero -->
+<div class="relative overflow-hidden md:h-[70vh] md:min-h-[600px] z-0 before:absolute before:inset-0 before:bg-polygon before:bg-repeat before:w-full before:bg-fixed before:-z-10 before:pointer-events-none before:h-full before:bg-contain">
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
+    
+
+    <!-- Title -->
+    <div class="mt-5 max-w-2xl text-center mx-auto">
+      <h1 class="block font-bold text-4xl md:text-5xl lg:text-6xl text-white" style="text-shadow: -1px -5px 12px #45a9e8;">
+          Better Health. <br>
+          Faster Recovery. <br>
+          Peak Performance.
+      </h1>
+    </div>
+
+    <!-- Buttons -->
+    <a class="flex w-fit mt-10 mx-auto justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-primary to-teal-500 hover:from-teal-500 hover:to-primary border border-transparent text-white text-xl font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white py-3 px-12 dark:focus:ring-offset-gray-800" href="#">
+      Get started
+      <svg class="w-5 h-5" viewBox="0 0 16 16" fill="none">
+        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Polygon Background -->
+  <img src={herobackground} alt="background" class="absolute top-0 pointer-events-none -z-20 left-0 w-full h-full object-cover">
+</div>
+<!-- End Hero -->

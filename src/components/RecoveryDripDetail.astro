@@ -1,0 +1,78 @@
+---
+import recoveryImg from "@images/recovery-image-3.png";
+import hangover from "@images/hangovers.png";
+import rehydration from "@images/rehydration.png";
+import headaches from "@images/headaches.png";
+---
+
+<section class="px-7 py-10 md:py-20">
+  <div class="max-w-7xl w-full mx-auto">
+    <div class="grid items-center grid-cols-1 md:grid-cols-[45%_55%] gap-8">
+      <div>
+        <img src={recoveryImg} alt="image" class="w-full h-auto object-contain" />
+      </div>
+      <div>
+        <h2 class="text-4xl md:text-5xl text-primary font-bold mb-8">Recovery</h2>
+        <p>Replenish your body with a combination of IV fluids, electrolytes, vitamins, and medications to rehydrate and detoxify your body and help you overcome your hangover symptoms or recover from gastrointestinal illness quickly.</p>
+
+        <a href="#" type="button" class="py-4 mt-6 px-12 w-fit flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-primary text-white hover:bg-sky-600 transition-all">Schedule Appointment</a>
+      </div>
+    </div>
+
+    <div class="pt-8 mb-14">
+      <h2 class="text-2xl font-semibold mb-10">Ingredients:</h2>
+
+      <div class="sqs-html-content">
+        <ul class="list-disc pl-5 mb-6">
+          <li>&nbsp;B-Complex: A powerful combination of essential B vitamins (B1- thiamine, B2- riboflavin, B3- niacinamide, B5- pantothenic acid, B6- pyridoxine) these vitamins boost energy and enhance the immune and nervous system, as well as decrease stress and anxiety.</li>
+          <li>B-12: Also known as cobalamin, is an important water-soluble vitamin. It plays an essential role in the production of your red blood cells and DNA, as well as the proper functioning of your nervous system. Vitamin B12 is naturally found in animal foods, including meats, fish, poultry, eggs and dairy.</li>
+          <li>Toradol: Strong, non-sedating anti-inflammatory medication for aches and pains.</li>
+          <li>Pepcid: Anti-histamine to settle and smooth your stomach.</li>
+          <li>Zofran: Fast acting, powerful anti-nausea medication.</li>
+        </ul>
+        <h3>
+          <strong>Benefits You Can Expect:&nbsp;</strong>
+        </h3>
+        <ul class="list-disc pl-5 mb-6">
+          <li>Quick Recovery From Hangovers</li>
+          <li>GI Illness</li>
+          <li>Eliminate Nausea &amp; Headaches</li>
+        </ul>
+        <h3>
+          <strong>Works Well With:</strong>
+        </h3>
+        <ul class="list-disc pl-5 mb-6">
+          <li>Glutathione add on</li>
+          <li>Extra liter add on</li>
+          <li>B12 Shot</li>
+        </ul>
+
+        <h3 class="text-lg font-bold text-black">$129</h3>
+      </div>
+    </div>
+
+    <!-- Best Uses Of Drips -->
+    <h2 class="text-3xl font-semibold text-primary mb-9 text-center">Best Uses for Recovery IV Drip</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="p-8 border border-primary rounded">
+        <p class="text-center text-lg text-primary mb-8">Hangovers</p>
+        <div class="overflow-hidden">
+          <img src={hangover} alt="image" class="scale-150" />
+        </div>
+      </div>
+      <div class="p-8 border border-primary rounded">
+        <p class="text-center text-lg text-primary mb-8">Rehydration</p>
+        <div class="overflow-hidden">
+          <img src={rehydration} alt="image" class="scale-150" />
+        </div>
+      </div>
+      <div class="p-8 border border-primary rounded">
+        <p class="text-center text-lg text-primary mb-8">Headaches & Migraines</p>
+        <div class="overflow-hidden">
+          <img src={headaches} alt="image" class="scale-150" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
