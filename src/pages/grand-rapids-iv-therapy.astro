@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "@components/Hero.astro";
+import Header from "@components/Header.astro";
+import Process from "@components/Process.astro";
+import Testimonials from "@components/Testimonials.astro";
+import Questions from "@components/Questions.astro";
+import Footer from "@components/Footer.astro";
+import ShortHero from "@components/ShortHero.astro";
+import img from "@images/Sucrose_molecule.svg";
+import PeptideShop from "@components/PeptideShop.astro";
+---
+
+<Layout title="Homepage">
+  <Header />
+  <ShortHero title="ELEVATE YOUR WELL-BEING AT BIOFUSE WELLNESS & PEAK PERFORMANCE" description="Our IV therapy offers a variety of vitamin blends, minerals, ketamine therapy, antioxidants, and amino acids to alleviate symptoms like hangovers, jet lag, cold/flu, migraines, and even enhance your athletic performance. By providing your body with the necessary nutrients, our IV drip therapy can also improve your overall beauty, skin, nail, and hair health. Say goodbye to feeling sluggish and unwell and embrace a healthier, more vibrant you with our top-notch IV therapy services. Available in Grand Rapids, MI as well as Traverse City, MI, Kalamazoo, MI, and Boise, ID. " banner={img} />
+
+  <hr class="mb-14 mt-9 border-t border-t-primary max-w-7xl mx-auto" />
+
+  <main class="px-6">
+    <div class="prose max-w-7xl w-full mx-auto prose-h2:text-primary">
+      <h2>OUR MISSION</h2>
+      <p>At BioFuse Wellness &amp; Peak Performance in Grand Rapids, MI, we prioritize our customers above all else. Our top-notch services are designed to improve the health and wellness of the communities we serve. With innovative and excellent solutions, we help our customers feel their best and live their best lives. Whether you&apos;re looking for IV drip therapy or IV therapy, we have the expertise to help you achieve your wellness goals.</p>
+
+      <h2>OUR CORE VALUES</h2>
+      <h4><strong>Commitment</strong></h4>
+      <p>&nbsp; &nbsp; At Grand Rapids IV Therapy, our commitment is to provide you with the best service possible. We prioritize your needs by offering professional, compassionate, and convenient IV drip therapy.</p>
+      <h4><strong>Innovation</strong></h4>
+      <p><strong>&nbsp; &nbsp;&nbsp;</strong>We pride ourselves on innovation and constantly strive to improve our services to meet your health and wellness needs. Our team is dedicated to being leaders in the healthcare community.</p>
+      <h4><strong>Excellence</strong></h4>
+      <p><strong>&nbsp; &nbsp;&nbsp;</strong>We strive for excellence in everything we do. Our products and services are of exceptional quality, and we hold ourselves to the highest standards of care.</p>
+      <h4><strong>Respect</strong></h4>
+      <p><strong>&nbsp; &nbsp;&nbsp;</strong>At Grand Rapids IV Therapy, we treat you with respect and listen to your individual stories to provide personalized care. We value you as much as we do our team members and strive to make your experience as positive as possible. Experience the best in IV therapy with us in Grand Rapids, MI.</p>
+    </div>
+
+    <div class="relative bg-white mt-24">
+      <img class="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80" alt="" />
+
+      <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
+        <div class="px-6 pb-24 pt-16 sm:pb-32 sm:pt-20 lg:col-start-2 lg:px-8 lg:pt-32">
+          <div class="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
+            <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">People First</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              You lead an active and busy life, and let’s be frank, not feeling like yourself isn’t an option anymore. That’s why our treatments only take 45 minutes and are focused on getting you back to one hundred percent. Every time you visit BioFuse, we guarantee you’ll be treated like the VIP you are.
+              <br /><br />
+              Every experience you have with us will be the best one yet. When you receive your drip, you will be in a relaxing and calm environment, or the comfort of your own home. So sit back, finish your favorite season of friends, read a magazine, or enjoy our complimentary beverages. This is Your time to relax and rejuvenate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative bg-white mb-12">
+      <img class="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80" alt="" />
+      <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
+        <div class="px-6 pb-24 pt-16 sm:pb-32 lg:order-first sm:pt-20 lg:px-8 lg:pt-32">
+          <div class="mx-auto max-w-2xl lg:ml-0 lg:max-w-lg">
+            <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">The Next Generation Of Wellness</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              The need for IV hydration treatment stems from a few specific needs, so let’s talk about hangovers first. Hey, hangovers happen, and you don’t have to suffer all day long anymore. Second, IV hydration therapy is very beneficial after a workout. It’s important to replenish your body with the fluids, vitamins, and amino acids it needs.
+              <br /><br />
+              Third, sometimes we need a boost when it comes to recovering from illness, make sure your body has what it needs to fight back! Our IV fluids will promote a faster recovery so you can leave your sickness behind, faster. Lastly, a favorite of our clients, you can nip jet lag in the bud by visiting us after your travels. You’ll feel reenergized and ready to take on your day!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <PeptideShop />
+  </main>
+
+  <Footer />
+</Layout>

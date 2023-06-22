@@ -1,15 +1,20 @@
 ---
-import img from "@images/Sucrose_molecule.svg";
+const {title, description, banner} = Astro.props as Props;
+export interface Props {
+  title: string,
+  description: string,
+  banner: string
+}
 ---
 
 <section class="py-16 md:py-24 px-7">
   <div class="max-w-7xl w-full mx-auto flex justify-between gap-12 flex-col md:flex-row items-center">
-    <div class="max-w-md">
-      <h2 class="text-4xl font-bold text-primary mb-7">Peptide Therapy</h2>
-      <p>Optimize your health, athletic performance, muscle recovery and fat loss. Give yourself the edge you’ve always wanted.</p>
+    <div class="max-w-2xl">
+      <h2 class="text-4xl font-bold text-primary mb-7" set:html={title}></h2>
+      <p set:html={description}></p>
     </div>
     <div class="max-w-md w-full">
-      <img src={img} alt="banner" class="w-full object-contain" />
+      <img src={banner} alt={title} class="w-full object-contain" />
     </div>
   </div>
 </section>
