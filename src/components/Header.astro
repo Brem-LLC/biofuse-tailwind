@@ -1,12 +1,16 @@
 ---
 import logo from "@images/biofuse-logo.png";
+import navthumb from "@images/NAD.jpg";
+import navThumbTwo from "@images/booster.jpg";
+import navThumbThree from "@images/core-value-right.png";
 ---
 
-<header class="relative flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full bg-white py-7 dark:bg-gray-800">
+<!-- New One -->
+<header class="relative hidden flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full bg-white py-7 dark:bg-gray-800">
   <nav class="max-w-[85rem] w-full mx-auto px-4 lg:flex lg:items-center lg:justify-between" aria-label="Global">
     <div class="flex items-center justify-between">
       <a class="flex-none" href="#">
-        <img src={logo} alt="Biofuse" class="w-[174px] h-auto object-contain" />
+        <img src={logo} alt="primary" class="w-[174px] h-auto object-contain" />
       </a>
       <div class="lg:hidden">
         <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary transition-all dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-with-mega-menu" aria-controls="navbar-with-mega-menu" aria-label="Toggle navigation">
@@ -86,3 +90,548 @@ import logo from "@images/biofuse-logo.png";
     </div>
   </nav>
 </header>
+
+<!-- Prev -->
+<nav class="bg-[#161617]/80 px-3 relative z-40" x-data="{navopen: false, submenu: false}">
+  <div class="max-w-[1160px] w-full mx-auto py-3 flex items-center justify-between gap-14">
+    <a href="/" class="block relative z-30">
+      <svg class="w-36 h-auto" viewBox="0 0 198 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.5253 14.4798C23.1261 12.9518 24.1327 10.7932 24.1327 8.40411C24.1327 3.77154 20.3611 0 15.7286 0H0.90918V4.65683H15.7286C17.7902 4.65683 19.4758 6.3425 19.4758 8.40411C19.4758 10.4657 17.7902 12.1514 15.7286 12.1514H5.49324V16.8082H15.7286C17.7902 16.8082 19.4758 18.4939 19.4758 20.5555C19.4758 22.6171 17.7902 24.3028 15.7286 24.3028H0.90918V28.9596H15.7286C20.3611 28.9596 24.1327 25.1881 24.1327 20.5555C24.1327 18.1665 23.1261 16.0078 21.5253 14.4798Z" fill="#9EDAE3"></path>
+        <path d="M39.0123 7.44629H34.3555V28.9599H39.0123V7.44629Z" fill="#9EDAE3"></path>
+        <path d="M39.0123 0H34.3555V4.26876H39.0123V0Z" fill="#9EDAE3"></path>
+        <path d="M63.5098 0V4.57194C68.3242 5.29956 72.023 9.4713 72.023 14.4798C72.023 19.4883 68.3242 23.6601 63.5098 24.3877V28.9596C70.8224 28.1956 76.5586 21.9986 76.5586 14.4798C76.5586 6.96098 70.8346 0.76401 63.5098 0Z" fill="#9EDAE3"></path>
+        <path d="M60.4902 24.3877C55.6757 23.6601 51.977 19.4883 51.977 14.4798C51.977 9.4713 55.6757 5.29956 60.4902 4.57194V0C53.1776 0.76401 47.4414 6.96098 47.4414 14.4798C47.4414 21.9986 53.1654 28.1956 60.4902 28.9596V24.3877Z" fill="#9EDAE3"></path>
+        <path d="M124.267 24.5454C121.162 23.8298 118.846 21.0527 118.846 17.742V0H114.165V17.742C114.165 23.6479 118.579 28.5352 124.267 29.2992V24.5454Z" fill="#9EDAE3"></path>
+        <path d="M132.816 0V17.742C132.816 21.0527 130.5 23.8298 127.396 24.5454V29.2992C133.095 28.5352 137.497 23.6479 137.497 17.742V0H132.816Z" fill="#9EDAE3"></path>
+        <path d="M105.917 0H84.9736V4.69321H105.917V0Z" fill="#9EDAE3"></path>
+        <path d="M84.9014 28.9476H89.5824V16.7962H105.918V12.103H84.9014V28.9476Z" fill="#9EDAE3"></path>
+        <path d="M197.091 0H175.407V4.74172H197.091V0Z" fill="#9EDAE3"></path>
+        <path d="M175.407 29.2993H197.091V24.5576H180.561V17.0024H197.091V12.2485H175.407V29.2993Z" fill="#9EDAE3"></path>
+        <path d="M167.173 0H153.238C149.952 0 147.102 1.87971 145.695 4.60832H167.16V0H167.173Z" fill="#9EDAE3"></path>
+        <path d="M147.066 29.2992H160.988C164.275 29.2992 167.125 27.4195 168.531 24.6909H147.066V29.2992Z" fill="#9EDAE3"></path>
+        <path d="M160.988 12.3457H153.239C151.104 12.3457 149.37 10.6115 149.37 8.47715C149.37 8.21035 149.394 7.94356 149.455 7.67676H144.798C144.774 7.94356 144.762 8.19823 144.762 8.47715C144.762 13.1461 148.558 16.954 153.239 16.954H160.988C163.122 16.954 164.856 18.6882 164.856 20.8226C164.856 21.0894 164.832 21.3562 164.772 21.623H169.428C169.453 21.3562 169.465 21.1015 169.465 20.8226C169.465 16.1536 165.657 12.3457 160.988 12.3457Z" fill="#9EDAE3"></path>
+        <path d="M6.67009 38.4429H7.33709L5.63928 43.0148H5.09356L3.67469 39.2796L2.31645 43.0148H1.77072L0.0244141 38.4429H0.67928L2.02539 42.0689L3.35938 38.4429H4.00212L5.34823 42.0689L6.68222 38.4429H6.67009Z" fill="white"></path>
+        <path d="M15.426 40.9898H11.4968C11.606 41.9721 12.2851 42.5421 13.2068 42.5421C13.8374 42.5421 14.3952 42.2389 14.6984 41.7417L15.232 41.9721C14.8318 42.7119 14.0435 43.1363 13.1825 43.1363C11.8849 43.1363 10.8662 42.1662 10.8662 40.723C10.8662 39.2799 11.897 38.334 13.1825 38.334C14.468 38.334 15.4381 39.2678 15.4381 40.723C15.4381 40.8079 15.4381 40.9049 15.4139 41.002L15.426 40.9898ZM14.8197 40.4562C14.7348 39.5103 14.0799 38.9282 13.1825 38.9282C12.2851 38.9282 11.6302 39.4739 11.4968 40.4562H14.8197Z" fill="white"></path>
+        <path d="M19.6094 43.015V35.957H20.24V43.015H19.6094Z" fill="white"></path>
+        <path d="M24.7393 43.015V35.957H25.3699V43.015H24.7393Z" fill="white"></path>
+        <path d="M33.9443 40.3471V43.0151H33.3137V40.3835C33.3137 39.4982 32.7558 38.9403 32.0161 38.9403C31.2763 38.9403 30.5123 39.3769 30.488 40.4805V43.0151H29.8574V38.4431H30.488V39.2678C30.767 38.6129 31.5067 38.334 32.0767 38.334C33.1803 38.334 33.9321 39.098 33.9321 40.3592L33.9443 40.3471Z" fill="white"></path>
+        <path d="M42.6389 40.9898H38.7097C38.8189 41.9721 39.498 42.5421 40.4196 42.5421C41.0503 42.5421 41.6081 42.2389 41.9113 41.7417L42.4449 41.9721C42.0447 42.7119 41.2564 43.1363 40.3954 43.1363C39.0978 43.1363 38.0791 42.1662 38.0791 40.723C38.0791 39.2799 39.1099 38.334 40.3954 38.334C41.6809 38.334 42.651 39.2678 42.651 40.723C42.651 40.8079 42.651 40.9049 42.6268 41.002L42.6389 40.9898ZM42.0326 40.4562C41.9477 39.5103 41.2928 38.9282 40.3954 38.9282C39.498 38.9282 38.8431 39.4739 38.7097 40.4562H42.0326Z" fill="white"></path>
+        <path d="M46.4473 41.8024H47.0294C47.1021 42.1783 47.4538 42.5785 48.1208 42.5785C48.7878 42.5785 49.1759 42.2389 49.1759 41.7781C49.1759 41.4022 48.9212 41.1596 48.4482 41.0383L47.7934 40.8807C47.1506 40.723 46.6292 40.3956 46.6292 39.6316C46.6292 38.8676 47.2598 38.334 48.1329 38.334C48.8969 38.334 49.6003 38.7584 49.6246 39.5831H49.0182C48.994 39.1708 48.5816 38.8918 48.1329 38.8918C47.5993 38.8918 47.2477 39.2193 47.2477 39.6437C47.2477 40.0682 47.6236 40.2622 47.951 40.335L48.6302 40.5047C49.5154 40.723 49.7944 41.2566 49.7944 41.7902C49.7944 42.6027 49.0546 43.1363 48.1087 43.1363C47.3204 43.1363 46.52 42.6755 46.4473 41.8024Z" fill="white"></path>
+        <path d="M53.5898 41.8024H54.1719C54.2447 42.1783 54.5964 42.5785 55.2634 42.5785C55.9304 42.5785 56.3185 42.2389 56.3185 41.7781C56.3185 41.4022 56.0638 41.1596 55.5908 41.0383L54.936 40.8807C54.2932 40.723 53.7718 40.3956 53.7718 39.6316C53.7718 38.8676 54.4024 38.334 55.2755 38.334C56.0395 38.334 56.7429 38.7584 56.7672 39.5831H56.1608C56.1365 39.1708 55.7242 38.8918 55.2755 38.8918C54.7419 38.8918 54.3902 39.2193 54.3902 39.6437C54.3902 40.0682 54.7662 40.2622 55.0936 40.335L55.7727 40.5047C56.658 40.723 56.9369 41.2566 56.9369 41.7902C56.9369 42.6027 56.1972 43.1363 55.2513 43.1363C54.463 43.1363 53.6626 42.6755 53.5898 41.8024Z" fill="white"></path>
+        <path d="M71.8173 42.5298V43.1119H71.6596C70.9805 43.1119 70.4469 42.7845 70.3377 42.0933C69.9982 42.7845 69.1978 43.1362 68.3974 43.1362C67.124 43.1362 66.3115 42.2509 66.3115 41.1473C66.3115 40.2863 66.7966 39.5466 67.6091 39.2555C67.124 39.0008 66.833 38.4066 66.833 37.8124C66.833 36.8786 67.5727 36.1631 68.5672 36.1631C69.2463 36.1631 69.792 36.4784 70.1073 36.9514L69.598 37.2788C69.3676 36.9514 68.9795 36.7452 68.5793 36.7452C67.9244 36.7452 67.4636 37.2303 67.4636 37.8488C67.4636 38.4672 67.9487 38.9887 68.6642 38.9887H70.1073V38.1883H70.7258V39.0008H71.6111V39.5223H70.7258V40.9776C70.7258 41.8265 70.9805 42.5177 71.6717 42.5177H71.8173V42.5298ZM70.1194 41.0625V39.5344H68.7006C67.6576 39.5344 66.9543 40.165 66.9543 41.0867C66.9543 41.9235 67.5364 42.542 68.5065 42.542C69.4767 42.542 70.0952 41.9235 70.1316 41.0625H70.1194Z" fill="white"></path>
+        <path d="M85.8236 40.7352C85.8236 42.1298 84.7807 43.1363 83.5073 43.1363C82.7312 43.1363 82.0278 42.7604 81.6882 42.1298V45.2465H81.0576V38.4553H81.6882V39.3527C82.0157 38.7221 82.7433 38.334 83.5073 38.334C84.7928 38.334 85.8236 39.3527 85.8236 40.7473V40.7352ZM85.2051 40.7352C85.2051 39.7165 84.4168 38.9161 83.4588 38.9161C82.5008 38.9161 81.6882 39.6558 81.6882 40.7109C81.6882 41.766 82.5493 42.53 83.4588 42.53C84.429 42.53 85.2051 41.7417 85.2051 40.7352Z" fill="white"></path>
+        <path d="M94.2766 40.9898H90.3474C90.4565 41.9721 91.1357 42.5421 92.0573 42.5421C92.6879 42.5421 93.2458 42.2389 93.549 41.7417L94.0826 41.9721C93.6824 42.7119 92.8941 43.1363 92.0331 43.1363C90.7355 43.1363 89.7168 42.1662 89.7168 40.723C89.7168 39.2799 90.7476 38.334 92.0331 38.334C93.3186 38.334 94.2887 39.2678 94.2887 40.723C94.2887 40.8079 94.2887 40.9049 94.2645 41.002L94.2766 40.9898ZM93.6702 40.4562C93.5854 39.5103 92.9305 38.9282 92.0331 38.9282C91.1357 38.9282 90.4808 39.4739 90.3474 40.4562H93.6702Z" fill="white"></path>
+        <path d="M102.293 38.443H102.924V43.015H102.293V42.0691C101.966 42.6997 101.25 43.1363 100.438 43.1363C99.1884 43.1363 98.1455 42.0933 98.1455 40.723C98.1455 39.3526 99.1521 38.3218 100.462 38.3218C101.25 38.3218 101.953 38.6977 102.293 39.3283V38.443ZM102.293 40.7472C102.293 39.68 101.432 38.9281 100.51 38.9281C99.5886 38.9281 98.764 39.7528 98.764 40.7351C98.764 41.7174 99.5523 42.542 100.51 42.542C101.468 42.542 102.281 41.778 102.281 40.7472H102.293Z" fill="white"></path>
+        <path d="M111.207 43.015H110.358L108.053 40.6624V43.015H107.423V35.957H108.053V40.1894L109.763 38.4431H110.637L108.684 40.432L111.219 43.015H111.207Z" fill="white"></path>
+        <path d="M124.934 40.7352C124.934 42.1298 123.891 43.1363 122.618 43.1363C121.842 43.1363 121.138 42.7604 120.799 42.1298V45.2465H120.168V38.4553H120.799V39.3527C121.126 38.7221 121.854 38.334 122.618 38.334C123.903 38.334 124.934 39.3527 124.934 40.7473V40.7352ZM124.315 40.7352C124.315 39.7165 123.527 38.9161 122.569 38.9161C121.611 38.9161 120.799 39.6558 120.799 40.7109C120.799 41.766 121.66 42.53 122.569 42.53C123.539 42.53 124.315 41.7417 124.315 40.7352Z" fill="white"></path>
+        <path d="M133.387 40.9898H129.458C129.567 41.9721 130.246 42.5421 131.168 42.5421C131.798 42.5421 132.356 42.2389 132.659 41.7417L133.193 41.9721C132.793 42.7119 132.004 43.1363 131.143 43.1363C129.846 43.1363 128.827 42.1662 128.827 40.723C128.827 39.2799 129.858 38.334 131.143 38.334C132.429 38.334 133.399 39.2678 133.399 40.723C133.399 40.8079 133.399 40.9049 133.375 41.002L133.387 40.9898ZM132.781 40.4562C132.696 39.5103 132.041 38.9282 131.143 38.9282C130.246 38.9282 129.591 39.4739 129.458 40.4562H132.781Z" fill="white"></path>
+        <path d="M140.36 38.4674L140.238 39.0616C140.008 38.9646 139.79 38.9403 139.62 38.9403C138.528 38.9403 138.201 40.1773 138.201 41.3051V43.0272H137.57V38.4553H138.201V39.571C138.431 38.7948 138.916 38.334 139.632 38.334C139.887 38.334 140.178 38.3825 140.36 38.4674Z" fill="white"></path>
+        <path d="M146.242 36.5513C145.381 36.5513 145.138 37.1334 145.138 37.861V38.4431H146.303V38.9767H145.138V43.015H144.508V38.9767H143.61V38.4431H144.508V37.9338C144.508 36.7938 144.956 35.957 146.157 35.957H146.594V36.5513H146.254H146.242Z" fill="white"></path>
+        <path d="M149.746 40.723C149.746 39.2798 150.838 38.3218 152.135 38.3218C153.433 38.3218 154.536 39.2677 154.536 40.723C154.536 42.1782 153.445 43.1363 152.135 43.1363C150.825 43.1363 149.746 42.1782 149.746 40.723ZM153.906 40.723C153.906 39.6436 153.093 38.916 152.135 38.916C151.177 38.916 150.377 39.6436 150.377 40.723C150.377 41.8023 151.165 42.5299 152.135 42.5299C153.105 42.5299 153.906 41.7901 153.906 40.723Z" fill="white"></path>
+        <path d="M161.51 38.4674L161.389 39.0616C161.158 38.9646 160.94 38.9403 160.77 38.9403C159.679 38.9403 159.351 40.1773 159.351 41.3051V43.0272H158.721V38.4553H159.351V39.571C159.582 38.7948 160.067 38.334 160.782 38.334C161.037 38.334 161.328 38.3825 161.51 38.4674Z" fill="white"></path>
+        <path d="M172.606 40.3471V43.0151H171.976V40.3835C171.976 39.4982 171.442 38.9403 170.69 38.9403C169.829 38.9403 169.259 39.4739 169.259 40.6867V43.0151H168.641V40.3835C168.641 39.4982 168.107 38.9403 167.392 38.9403C166.676 38.9403 165.948 39.389 165.936 40.4926V43.0272H165.306V38.4553H165.936V39.2678C166.167 38.6614 166.822 38.334 167.501 38.334C168.24 38.334 168.847 38.7221 169.101 39.4254C169.453 38.528 170.241 38.334 170.787 38.334C171.891 38.334 172.594 39.098 172.594 40.3592L172.606 40.3471Z" fill="white"></path>
+        <path d="M180.889 38.443H181.519V43.015H180.889V42.0691C180.561 42.6997 179.846 43.1363 179.033 43.1363C177.784 43.1363 176.741 42.0933 176.741 40.723C176.741 39.3526 177.748 38.3218 179.057 38.3218C179.846 38.3218 180.549 38.6977 180.889 39.3283V38.443ZM180.889 40.7472C180.889 39.68 180.028 38.9281 179.106 38.9281C178.184 38.9281 177.36 39.7528 177.36 40.7351C177.36 41.7174 178.148 42.542 179.106 42.542C180.064 42.542 180.877 41.778 180.877 40.7472H180.889Z" fill="white"></path>
+        <path d="M185.691 40.723C185.691 39.2798 186.807 38.3218 188.117 38.3218C188.76 38.3218 189.354 38.5643 189.754 38.9524L189.378 39.389C189.063 39.11 188.626 38.9281 188.141 38.9281C187.135 38.9281 186.322 39.6558 186.322 40.7351C186.322 41.8144 187.135 42.542 188.141 42.542C188.626 42.542 189.051 42.3601 189.378 42.0812L189.766 42.5178C189.354 42.9058 188.772 43.1484 188.117 43.1484C186.807 43.1484 185.691 42.1903 185.691 40.7351V40.723Z" fill="white"></path>
+        <path d="M197.976 40.9898H194.047C194.156 41.9721 194.835 42.5421 195.757 42.5421C196.387 42.5421 196.945 42.2389 197.248 41.7417L197.782 41.9721C197.382 42.7119 196.593 43.1363 195.732 43.1363C194.435 43.1363 193.416 42.1662 193.416 40.723C193.416 39.2799 194.447 38.334 195.732 38.334C197.018 38.334 197.988 39.2678 197.988 40.723C197.988 40.8079 197.988 40.9049 197.964 41.002L197.976 40.9898ZM197.369 40.4562C197.285 39.5103 196.63 38.9282 195.732 38.9282C194.835 38.9282 194.18 39.4739 194.047 40.4562H197.369Z" fill="white"></path>
+      </svg>
+    </a>
+    <div class="flex items-center gap-5 lg:flex-1">
+      <ul class="items-center absolute top-full bg-dark lg:bg-transparent left-0 right-0 lg:static justify-between gap-5 w-full z-20 hidden lg:flex">
+        <li class="py-5 w-full lg:w-max">
+          <a href="#" class="text-sm text-white">Vitamin Injections</a>
+        </li>
+        <li class="py-5 w-full lg:w-max group">
+          <a href="#" class="text-sm text-white group-hover:text-primary">Drips</a>
+          <div class="absolute top-0 w-full left-0 h-screen bg-black/20 backdrop-blur-lg opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible pointer-events-none -z-10">
+            <div class="bg-[#161617] pt-20 scale-y-0 group-hover:scale-y-100 origin-top transition-all duration-200 pointer-events-auto">
+              <div class="flex justify-between gap-8 max-w-[1160px] py-7 w-full mx-auto px-6" x-data="{currentTab: 'immunity'}">
+                <ul class="space-y-2.5 flex-shrink-0 max-w-[200px] w-full">
+                  <li><a @click.prevent="currentTab='immunity'" :class="currentTab==='immunity' ? 'text-black bg-primary': 'hover:text-primary hover:bg-black text-white'" class="text-lg transition-all w-full px-4 py-2 rounded-md block" href="#">Immunity+</a></li>
+                  <li><a @click.prevent="currentTab='wellness'" :class="currentTab==='wellness' ? 'text-black bg-primary': 'hover:text-primary hover:bg-black text-white'" class="text-lg transition-all w-full px-4 py-2 rounded-md block" href="#">Wellness+</a></li>
+                  <li><a @click.prevent="currentTab='recovery'" :class="currentTab==='recovery' ? 'text-black bg-primary': 'hover:text-primary hover:bg-black text-white'" class="text-lg transition-all w-full px-4 py-2 rounded-md block" href="#">Recovery+</a></li>
+                </ul>
+
+                <div class="">
+                  <div x-show="currentTab==='immunity'">
+                    <div class="flex items-center gap-10">
+                      <div>
+                        <div class="p-4">
+                          <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                              <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-primary">
+                                Help center
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-white/60">Get all of your questions answered</p>
+                            </div>
+                          </div>
+                          <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                              <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-primary">
+                                Guides
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-white/60">Learn how to maximize our platform</p>
+                            </div>
+                          </div>
+                          <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                              <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-primary">
+                                Events
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-white/60">See meet-ups and other events near you</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-8">
+                          <div class="flex justify-between">
+                            <h3 class="text-sm font-semibold leading-6 text-white">Recent posts</h3>
+                            <a href="#" class="text-sm font-semibold leading-6 text-primary">See all <span aria-hidden="true">&rarr;</span></a>
+                          </div>
+                          <ul role="list" class="mt-6 space-y-6">
+                            <li class="relative">
+                              <time datetime="2023-03-05" class="block text-xs leading-6 text-white/60">Mar 5, 2023</time>
+                              <a href="#" class="block truncate text-sm font-semibold leading-6 text-primary">
+                                Boost your conversion rate
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                            <li class="relative">
+                              <time datetime="2023-02-25" class="block text-xs leading-6 text-white/60">Feb 25, 2023</time>
+                              <a href="#" class="block truncate text-sm font-semibold leading-6 text-primary">
+                                How to use search engine optimization to drive traffic to your site
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                            <li class="relative">
+                              <time datetime="2023-02-21" class="block text-xs leading-6 text-white/60">Feb 21, 2023</time>
+                              <a href="#" class="block truncate text-sm font-semibold leading-6 text-primary">
+                                Improve your customer experience
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div>
+                        <img src={navthumb} alt="Thumbnail" class="max-w-[403px] w-full object-cover h-full rounded-md object-bottom" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div x-show="currentTab==='wellness'">
+                    <div class="flex items-center gap-10">
+                      <div>
+                        <div class="p-4">
+                          <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                              <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-primary">
+                                Help center
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-white/60">Get all of your questions answered</p>
+                            </div>
+                          </div>
+                          <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                              <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-primary">
+                                Guides
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-white/60">Learn how to maximize our platform</p>
+                            </div>
+                          </div>
+                          <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                              <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-primary">
+                                Events
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-white/60">See meet-ups and other events near you</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-8">
+                          <div class="flex justify-between">
+                            <h3 class="text-sm font-semibold leading-6 text-white">Recent posts</h3>
+                            <a href="#" class="text-sm font-semibold leading-6 text-primary">See all <span aria-hidden="true">&rarr;</span></a>
+                          </div>
+                          <ul role="list" class="mt-6 space-y-6">
+                            <li class="relative">
+                              <time datetime="2023-03-05" class="block text-xs leading-6 text-white/60">Mar 5, 2023</time>
+                              <a href="#" class="block truncate text-sm font-semibold leading-6 text-primary">
+                                Boost your conversion rate
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                            <li class="relative">
+                              <time datetime="2023-02-25" class="block text-xs leading-6 text-white/60">Feb 25, 2023</time>
+                              <a href="#" class="block truncate text-sm font-semibold leading-6 text-primary">
+                                How to use search engine optimization to drive traffic to your site
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                            <li class="relative">
+                              <time datetime="2023-02-21" class="block text-xs leading-6 text-white/60">Feb 21, 2023</time>
+                              <a href="#" class="block truncate text-sm font-semibold leading-6 text-primary">
+                                Improve your customer experience
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div>
+                        <img src={navThumbTwo} alt="Thumbnail" class="max-w-[403px] w-full object-cover h-full rounded-md object-bottom" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div x-show="currentTab==='recovery'">
+                    <div class="flex items-center gap-10">
+                      <div>
+                        <div class="p-4">
+                          <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                              <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-primary">
+                                Help center
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-white/60">Get all of your questions answered</p>
+                            </div>
+                          </div>
+                          <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                              <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-primary">
+                                Guides
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-white/60">Learn how to maximize our platform</p>
+                            </div>
+                          </div>
+                          <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                              <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                              </svg>
+                            </div>
+                            <div>
+                              <a href="#" class="font-semibold text-primary">
+                                Events
+                                <span class="absolute inset-0"></span>
+                              </a>
+                              <p class="mt-1 text-white/60">See meet-ups and other events near you</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-8">
+                          <div class="flex justify-between">
+                            <h3 class="text-sm font-semibold leading-6 text-white">Recent posts</h3>
+                            <a href="#" class="text-sm font-semibold leading-6 text-primary">See all <span aria-hidden="true">&rarr;</span></a>
+                          </div>
+                          <ul role="list" class="mt-6 space-y-6">
+                            <li class="relative">
+                              <time datetime="2023-03-05" class="block text-xs leading-6 text-white/60">Mar 5, 2023</time>
+                              <a href="#" class="block truncate text-sm font-semibold leading-6 text-primary">
+                                Boost your conversion rate
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                            <li class="relative">
+                              <time datetime="2023-02-25" class="block text-xs leading-6 text-white/60">Feb 25, 2023</time>
+                              <a href="#" class="block truncate text-sm font-semibold leading-6 text-primary">
+                                How to use search engine optimization to drive traffic to your site
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                            <li class="relative">
+                              <time datetime="2023-02-21" class="block text-xs leading-6 text-white/60">Feb 21, 2023</time>
+                              <a href="#" class="block truncate text-sm font-semibold leading-6 text-primary">
+                                Improve your customer experience
+                                <span class="absolute inset-0"></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div>
+                        <img src={navThumbThree} alt="Thumbnail" class="max-w-[403px] w-full object-cover h-full rounded-md object-bottom" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="py-5 w-full lg:w-max">
+          <a href="#" class="text-sm text-white">Peptides</a>
+        </li>
+        <li class="py-5 w-full lg:w-max">
+          <a href="#" class="text-sm text-white">NAD+</a>
+        </li>
+        <li class="py-5 w-full lg:w-max">
+          <a href="#" class="text-sm text-white">Semaglutides</a>
+        </li>
+        <li class="py-5 w-full lg:w-max">
+          <a href="#" class="text-sm text-white">Katamine</a>
+        </li>
+      </ul>
+    </div>
+
+    <button @click="navopen = !navopen; submenu = false" :class="navopen ? 'fixed top-3 right-3': 'relative'" class="navbar-toggle lg:hidden z-50 text-white">
+      <div class="menu-icon">
+        <input class="menu-icon__cheeckbox" type="checkbox" />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </button>
+  </div>
+
+  <!-- Mobile Navbar -->
+  <div class="lg:hidden fixed inset-0 bg-[#161617] z-40 mobile-navbar" :class="navopen ? 'opened' : ''">
+    <button @click="submenu = false" :class="submenu ? 'opened' : ''" class="nav-back z-40 text-white absolute top-0 left-0 w-12 h-12 flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+      </svg>
+    </button>
+
+    <ul class="space-y-2 mobile-navlist p-14 h-full">
+      <li class="py-1">
+        <a href="#" class="text-3xl font-semibold tracking-tight leading-snug text-white menu-link">Vitamin Injections</a>
+      </li>
+      <li class="py-1">
+        <a href="#" @click.prevent="submenu = !submenu" class="text-3xl font-semibold tracking-tight leading-snug text-white menu-link">Drips</a>
+
+        <!-- SubMenu -->
+        <div class="submenu" :class="submenu ? 'opened' : ''" x-data="{currentTab: 'immunity'}">
+          <ul class="flex justify-center">
+            <li class="flex-1">
+              <a href="#" @click.prevent="currentTab='immunity'" :class="currentTab==='immunity' ? 'text-black bg-primary': 'hover:text-primary hover:bg-black text-white'" class="text-base px-3 py-2 rounded-tl border-b border-primary w-full text-center font-semibold tracking-tight leading-snug">Immunity+</a>
+            </li>
+            <li class="flex-1">
+              <a href="#" @click.prevent="currentTab='wellness'" :class="currentTab==='wellness' ? 'text-black bg-primary': 'hover:text-primary hover:bg-black text-white'" class="text-base px-3 py-2 border-b border-primary w-full text-center font-semibold tracking-tight leading-snug">Wellness+</a>
+            </li>
+            <li class="flex-1">
+              <a href="#" @click.prevent="currentTab='recovery'" :class="currentTab==='recovery' ? 'text-black bg-primary': 'hover:text-primary hover:bg-black text-white'" class="text-base px-3 py-2 rounded-tr border-b border-primary w-full text-center font-semibold tracking-tight leading-snug">Recovery+</a>
+            </li>
+          </ul>
+
+          <div class="pt-8">
+            <div x-show="currentTab==='immunity'">
+              <div class="flex items-center gap-10">
+                <div>
+                  <div>
+                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                      <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                        <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <a href="#" class="font-semibold text-primary">
+                          Help center
+                          <span class="absolute inset-0"></span>
+                        </a>
+                        <p class="mt-1 text-white/60">Get all of your questions answered</p>
+                      </div>
+                    </div>
+                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                      <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                        <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <a href="#" class="font-semibold text-primary">
+                          Guides
+                          <span class="absolute inset-0"></span>
+                        </a>
+                        <p class="mt-1 text-white/60">Learn how to maximize our platform</p>
+                      </div>
+                    </div>
+                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                      <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                        <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <a href="#" class="font-semibold text-primary">
+                          Events
+                          <span class="absolute inset-0"></span>
+                        </a>
+                        <p class="mt-1 text-white/60">See meet-ups and other events near you</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div x-show="currentTab==='wellness'">
+              <div class="flex items-center gap-10">
+                <div>
+                  <div>
+                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                      <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                        <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <a href="#" class="font-semibold text-primary">
+                          Events
+                          <span class="absolute inset-0"></span>
+                        </a>
+                        <p class="mt-1 text-white/60">See meet-ups and other events near you</p>
+                      </div>
+                    </div>
+                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                      <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                        <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <a href="#" class="font-semibold text-primary">
+                          Help center
+                          <span class="absolute inset-0"></span>
+                        </a>
+                        <p class="mt-1 text-white/60">Get all of your questions answered</p>
+                      </div>
+                    </div>
+                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                      <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                        <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <a href="#" class="font-semibold text-primary">
+                          Guides
+                          <span class="absolute inset-0"></span>
+                        </a>
+                        <p class="mt-1 text-white/60">Learn how to maximize our platform</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div x-show="currentTab==='recovery'">
+              <div class="flex items-center gap-10">
+                <div>
+                  <div>
+                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                      <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                        <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <a href="#" class="font-semibold text-primary">
+                          Guides
+                          <span class="absolute inset-0"></span>
+                        </a>
+                        <p class="mt-1 text-white/60">Learn how to maximize our platform</p>
+                      </div>
+                    </div>
+                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                      <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                        <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <a href="#" class="font-semibold text-primary">
+                          Help center
+                          <span class="absolute inset-0"></span>
+                        </a>
+                        <p class="mt-1 text-white/60">Get all of your questions answered</p>
+                      </div>
+                    </div>
+                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-black transition-all">
+                      <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-primary">
+                        <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <a href="#" class="font-semibold text-primary">
+                          Events
+                          <span class="absolute inset-0"></span>
+                        </a>
+                        <p class="mt-1 text-white/60">See meet-ups and other events near you</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="py-1">
+        <a href="#" class="text-3xl font-semibold tracking-tight leading-snug text-white menu-link">Peptides</a>
+      </li>
+      <li class="py-1">
+        <a href="#" class="text-3xl font-semibold tracking-tight leading-snug text-white menu-link">NAD+</a>
+      </li>
+      <li class="py-1">
+        <a href="#" class="text-3xl font-semibold tracking-tight leading-snug text-white menu-link">Semaglutides</a>
+      </li>
+      <li class="py-1">
+        <a href="#" class="text-3xl font-semibold tracking-tight leading-snug text-white menu-link">Katamine</a>
+      </li>
+    </ul>
+  </div>
+</nav>
