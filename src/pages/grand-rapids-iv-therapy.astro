@@ -5,7 +5,10 @@ import Footer from "@components/Footer.astro";
 import ShortHero from "@components/ShortHero.astro";
 import img from "@images/Sucrose_molecule.svg";
 import PeptideShop from "@components/PeptideShop.astro";
-import mission from '@images/mission.jpg'
+// import mission from '@images/mission.jpg'
+import mission from '@images/health-and-wellness-img.jpeg'
+import generation from '@images/know-the-process.jpeg'
+import peopleFirst from '@images/biofuse-banner-with-address.png'
 ---
 
 <Layout title="Homepage">
@@ -20,7 +23,7 @@ import mission from '@images/mission.jpg'
         <h2>OUR MISSION</h2>
         <p>At BioFuse Wellness &amp; Peak Performance in Grand Rapids, MI, we prioritize our customers above all else. Our top-notch services are designed to improve the health and wellness of the communities we serve. With innovative and excellent solutions, we help our customers feel their best and live their best lives. Whether you&apos;re looking for IV drip therapy or IV therapy, we have the expertise to help you achieve your wellness goals.</p>
 
-        <img src={mission} alt="Mission" class="w-full object-contain mt-12 max-w-sm mx-auto">
+        <img src={mission} alt="Mission" class="w-full object-cover rounded-xl mt-12 aspect-video mx-auto">
       </div>
 
       <div>
@@ -37,7 +40,7 @@ import mission from '@images/mission.jpg'
     </div>
 
     <div class="relative bg-white mt-24">
-      <img class="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80" alt="" />
+      <img class="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2" src={peopleFirst} alt="" />
 
       <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
         <div class="sm:px-6 pb-24 pt-16 sm:pb-32 sm:pt-20 lg:col-start-2 lg:px-8 lg:pt-32">
@@ -54,7 +57,7 @@ import mission from '@images/mission.jpg'
     </div>
 
     <div class="relative bg-white mb-12">
-      <img class="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80" alt="" />
+      <img class="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2" src={generation} alt="" />
       <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
         <div class="sm:px-6 pb-24 pt-16 sm:pb-32 lg:order-first sm:pt-20 lg:px-8 lg:pt-32">
           <div class="mx-auto max-w-2xl lg:ml-0 lg:max-w-lg">
